@@ -1,5 +1,7 @@
 import { Public, Stars, Work } from "@mui/icons-material";
 import React from "react";
+import {Link} from "react-router-dom";
+import './css/Sidebar.css';
 
 function Sidebar() {
   return (
@@ -7,14 +9,14 @@ function Sidebar() {
       <div className="sidebar-container">
         <div className="sidebar-options">
           <div className="sidebar-option">
-            <a> Home</a>
+            <Link> Home</Link>
           </div>
           <div className="sidebar-option">
-            <a> PUBLIC</a>
+            <Link> PUBLIC</Link>
             <div className="link">
               <div className="link-tag">
                 <Public />
-                <a>Question</a>
+                <Link>Question</Link>
               </div>
               <div className="tags">
                 <p>Tags</p>
@@ -27,7 +29,7 @@ function Sidebar() {
             <div className="link">
               <div className="link-tag">
                 <Stars />
-                <a>Explore Collectives</a>
+                <Link>Explore Collectives</Link>
               </div>
             </div>
           </div>
@@ -35,7 +37,7 @@ function Sidebar() {
             <p>FIND A JOB</p>
             <div className="link">
               <div className="link-tag">
-                <a>Question</a>
+                <Link>Question</Link>
               </div>
             </div>
           </div>
@@ -43,7 +45,7 @@ function Sidebar() {
             <p>TEAMS</p>
             <div className="link-tag">
               <Work />
-              <a>Companies</a>
+              <Link>Companies</Link>
             </div>
           </div>
         </div>

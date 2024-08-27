@@ -6,7 +6,7 @@ import Header from "./components/Header/Header";
 
 import {
   BrowserRouter as Router,
-  Switch,
+  Routes,
   Route,
   Redirect,
 } from "react-router-dom";
@@ -18,9 +18,9 @@ function App() {
     <div className="App">
       <Router>
         <Header />
-        <Switch>
+        <Routes>
           <Route exact path="/" Component={StackOverflow} />
-        </Switch>
+        </Routes>
       </Router>
     </div>
   );
